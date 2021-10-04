@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>JavaScript DOM</title>
+</head>
+<body>
+  <header id="main-header">
+    <h1 class="title">Manage Faculty</h1>
+  </header>
+
+  <div id="main">
+    <h2 class="sub-title">Add Faculty</h2>
+
+    <form id="faculty-form">
+      <input type="text" name="facultyName" id="faculty-name">
+      <input type="text" name="facultyAbbr" id="faculty-abbr">
+      <input type="submit" value="Add Faculty">
+    </form>
+
+    <h2 class="sub-title">List of Faculty</h2>
+
+    <ul id="faculties">
+      <li class="list-item">Fakultas Filsafat / FFIL</li>
+      <li class="list-item">Fakultas Keguruan dan Ilmu Pendidikan / FKIP</li>
+      <li class="list-item">Fakultas Ekonomi dan Bisnis / FEB</li>
+    </ul>
+
+    <button id="testButton">Click Me!</button>
+
+    <div id="output">
+      <p>Mouse Position: </p>
+      <p id = "output">X: </p>
+      <p id = "output">Y: </p>
+    </div>
+    <div id="kotak"></div>
+  </div>
+
+  <footer id="footer">
+    <hr>
+    <p>copyright 2021</p>
+  </footer> 
+
+  <script src="event.js"></script>
+</body>
+</html>
