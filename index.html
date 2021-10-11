@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+
+  <title>MID Project</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    
+  <div class="container-fluid mb-3 pt-3">
+    <a href="#" class="link-light"><i class="bi bi-person-circle"></i></a>
+      <a class="navbar-brand" href="index.html">Student Management MiniApp</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container mt-3">
+
+    <h1>Student Management</h1>
+    <h1>MiniApp</h1>
+    <hr><br>
+
+    <!--Add Student-->
+
+    <div class="">
+      <div class="col-8">
+        <h4>Add Student</h4>
+
+      <!--Show/Hide form-->
+        
+        <button type="button" class="btn btn-dark" id="showhide-button" data-bs-toggle="collapse" data-bs-target="#demo">
+          Show/Hide Button
+        </button>
+
+        <div id="demo" class="collapse">
+        <div id="target">
+
+        <!--Input ID-->
+          <form class="mb-3">
+            <div class="form-group">
+              <br>
+              <label for="nim" class="form-label">NIM</label>
+              <input type="text" class="form-control" id="nim" placeholder="105011910006">
+            </div>
+          <!--Input Full Name-->
+          <form class="mb-3">
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Lee Min Ho">
+            </div>
+            
+           <!--Select Faculty-->
+           <div>
+            <label for="faculty">Faculty</label>
+            <select class="form-control" id="faculty">
+                <option selected>--SELECT FACULTY--</option>
+                <option value="Pascasarjana">Pascasarjana</option>
+                <option value="FKIP">Fakulatas Keguruan dan Ilmu Pendidikan</option>
+                <option value="FEB">Fakultas Ekonomi dan Bisnis</option>
+                <option value="FPER">Fakultas Pertanian</option>
+                <option value="FIK">Fakultas Ilmu Komputer</option>
+                <option value="FKEP">Fakultas Keperawatan</option>
+                <option value="ASMIK">Akademi Sekretari Manajemen Indonesia Klabat</option>
+              </select>
+            </div>
+            
+            <!--Select Prodi-->
+            <div>
+              <label for="prodi">Prodi</label>
+              <select class="form-control" id="prodi">
+                <option selected>--SELECT PRODI--</option>
+                <option value="Magister Manajemen">Magister Manajemen</option>
+                <option value="Magister Teologi">Magister Teologi</option>
+                <option value="Filsafat Agama Kristen Advent">Filsafat Agama Kristen Advent</option>
+                <option value="Pendidikan Agama">Pendidikan Agama</option>
+                <option value="Pendidikan Bahasa Inggris">Pendidikan Bahasa Inggris</option>
+                <option value="Pendidikan Ekonomi">Pendidikan Ekonomi</option>
+                <option value="Pendidikan Guru Luar Sekolah">Pendidikan Guru Luar Sekolah</option>
+                <option value="Manajemen">Manajemen</option>
+                <option value="Akuntansi">Akuntansi</option>
+                <option value="Bisnis Internasional">Bisnis Internasional</option>
+                <option value="Sistem Informasi">Sistem Informasi</option>
+                <option value="Informatika">Informatika</option>
+                <option value="Ners">Ners</option>
+                <option value="Agronomi">Agronomi</option>
+                <option value="Sekretari D-III">Sekretari D-III</option>
+              </select>
+            </div>
+             <!--Submit-->
+          <br>
+          <button type="submit" class="btn btn-dark">Add Student</button>
+          </form>
+          </div>
+        </div>
+      </div>
+    
+
+    <!--List Students-->
+    
+    <div class="row pt-4 mt-4">
+      <table class="table table-light table-striped">
+        <hr>
+        <h1 class="text-center text-uppercase">OUR STUDENTS</h1>
+        <input type="text" class="searchbar form-control" placeholder="Search Student by Name">
+  
+        
+        <div class="container2">    
+          <table class="table">
+            <thead>
+              <th>NIM</th>
+              <th>FULL NAME</th>
+              <th>FACULTY</th>
+              <th>PROGRAM OF STUDY</th>
+              <th>ACTION</th>
+            </thead>
+            <tbody>
+               
+          </tbody>
+          </table>
+        </div>
+
+        <!--Footer-->
+
+  <footer class="py-4">
+    <hr>
+      <div class="footer-copyright text-center py-3">
+      &copy; Brenda - Web Programming 2021
+  </div>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+  <script src="student.js"></script>
+</body>
+</html>

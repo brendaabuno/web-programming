@@ -1,0 +1,14 @@
+body{
+    background-image: url(halo.gif);
+    background-attachment: fixed;
+    color: white;
+    opacity: 0.9;
+}
+
+thead{
+    color: white;
+}
+
+tbody{
+    color: white;
+}
